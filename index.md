@@ -16,7 +16,7 @@ I am looking for a **4–6 month end-of-studies internship starting in March**, 
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
 I am passionate about using data to understand complex problems and build meaningful solutions. My academic background in **applied mathematics, statistics, and computer science** has given me a strong foundation for tackling data-driven challenges with both rigor and creativity.
 
@@ -70,7 +70,7 @@ I am particularly interested in **statistical modeling, machine learning, deep l
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 ### 1. Customer Segmentation with SOM + K-Medoids
 **Tech Stack:** Python, NumPy, Scikit-learn
@@ -128,7 +128,7 @@ Implemented and completed a **GAN architecture** for image generation on the MNI
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
 ### Data Scientist Intern — Crédit Populaire d’Algérie  
 **Algiers, Algeria** | **Feb 2025 – Jun 2025**
@@ -155,7 +155,7 @@ Worked on the analysis and modeling of **energy consumption at a national scale*
 
 ---
 
-## 🎓 Education
+## Education
 
 ### Master’s Degree in Mathematics for Data Science  
 **Sorbonne Paris-Nord University** — Villetaneuse, France  
@@ -181,7 +181,7 @@ I am currently deepening my knowledge in:
 
 ---
 
-## 📬 Let's Connect
+## Let's Connect
 
 I am open to internship opportunities, collaborations, and data science discussions.
 
@@ -192,7 +192,7 @@ I am open to internship opportunities, collaborations, and data science discussi
 
 ---
 
-## 📄 Resume
+## Resume
 
 You can also add a PDF version of my resume here once uploaded to the repository:
 
