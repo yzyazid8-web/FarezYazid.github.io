@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yazid Farez | Data Scientist</title>
+  <meta name="description" content="Portfolio of Yazid Farez, Data Scientist focused on machine learning, statistical modeling, and deep learning." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg-soft: #121933;
+      --card: rgba(18, 25, 51, 0.82);
+      --text: #e8ecf7;
+      --muted: #b8c0d9;
+      --accent: #6ea8fe;
+      --accent-2: #8ef0c1;
+      --border: rgba(255,255,255,0.08);
+      --shadow: 0 20px 40px rgba(0,0,0,0.25);
+      --maxw: 860px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(110,168,254,0.16), transparent 30%),
+        radial-gradient(circle at top right, rgba(142,240,193,0.10), transparent 28%),
+        linear-gradient(180deg, #0b1020 0%, #0e1428 100%);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(92%, var(--maxw));
+      margin: 0 auto;
+      padding: 2rem 0 4rem;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    .profile {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,0.12);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+      margin-bottom: 1rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.35rem 0.8rem;
+      border: 1px solid rgba(110,168,254,0.25);
+      border-radius: 999px;
+      color: var(--accent-2);
+      background: rgba(110,168,254,0.08);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    h1, h2, h3 { line-height: 1.15; margin: 0 0 1rem; }
+    h1 { font-size: clamp(2rem, 4.5vw, 3rem); letter-spacing: -0.03em; }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+    h3 { font-size: 1.08rem; }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .lead {
+      max-width: 62ch;
+      color: var(--muted);
+      margin: 0 auto 1.5rem;
+    }
+
+    .main-menu {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      width: 100%;
+      margin-top: 1.4rem;
+    }
+
+    .menu-btn {
+      width: 100%;
+      padding: 1rem 1.1rem;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .menu-btn:hover,
+    .menu-btn.active {
+      transform: translateY(-1px);
+      border-color: rgba(110,168,254,0.35);
+      background: rgba(110,168,254,0.12);
+    }
+
+    .panel {
+      display: none;
+      margin-top: 2rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .panel.active { display: block; }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .panel-header p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .close-btn {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 0.55rem 0.8rem;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.1rem;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .card p, .muted { color: var(--muted); }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.85rem;
+    }
+
+    .tag {
+      padding: 0.38rem 0.72rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      background: rgba(110,168,254,0.1);
+      border: 1px solid rgba(110,168,254,0.18);
+      color: #dce8ff;
+    }
+
+    ul.clean {
+      padding-left: 1.15rem;
+      margin: 0.5rem 0 0;
+    }
+
+    ul.clean li { margin: 0.35rem 0; }
+
+    .timeline {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .timeline-item {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.1rem;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .timeline-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .contact-item {
+      padding: 1rem;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+    }
+
+    footer {
+      padding-top: 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      .main-menu,
+      .grid-2,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <img src="images/profile.jpg" alt="Portrait of Yazid Farez" class="profile" />
+      <span class="eyebrow">Data Scientist • Open to internship opportunities</span>
+      <h1>Yazid Farez</h1>
+      <p class="subtitle">Machine Learning • Statistical Modeling • Deep Learning</p>
+      <p class="lead">
+        Junior Data Scientist with a strong background in applied mathematics, statistics, and machine learning.
+        I’m currently looking for a 4–6 month end-of-studies internship where I can contribute to impactful data projects.
+      </p>
+
+      <div class="main-menu">
+        <button class="menu-btn active" data-target="about">About Me</button>
+        <button class="menu-btn" data-target="skills">Core Skills</button>
+        <button class="menu-btn" data-target="projects">Projects</button>
+        <button class="menu-btn" data-target="experience">Experience</button>
+        <button class="menu-btn" data-target="education">Education</button>
+        <button class="menu-btn" data-target="contact">Contact</button>
+      </div>
+    </section>
+
+    <section id="about" class="panel active">
+      <div class="panel-header">
+        <div>
+          <h2>About Me</h2>
+          <p>A concise overview of my background and what drives me.</p>
+        </div>
+        <button class="close-btn" data-close="about">Close</button>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <p>
+            I am passionate about using data to understand complex problems and design meaningful solutions.
+            My background in applied mathematics, statistics, and computer science gives me a solid foundation
+            to approach data challenges with rigor and curiosity.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            Through internships and academic work, I have explored customer segmentation, energy demand forecasting,
+            anomaly detection, and deep learning. I enjoy moving from raw data to useful insight and clear results.
+          </p>
+          <div class="tags">
+            <span class="tag">Statistical Modeling</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Core Skills</h2>
+          <p>Main technologies, methods, and tools I use in data science projects.</p>
+        </div>
+        <button class="close-btn" data-close="skills">Close</button>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Programming</h3>
+          <ul class="clean">
+            <li><strong>Python</strong>: Pandas, NumPy, Scikit-learn, PyTorch, Matplotlib</li>
+            <li><strong>R</strong>: dplyr, caret</li>
+            <li><strong>SQL</strong>: T-SQL, Azure SQL</li>
+          </ul>
+
+          <h3>Machine Learning & Deep Learning</h3>
+          <ul class="clean">
+            <li>Supervised Learning</li>
+            <li>Unsupervised Learning</li>
+            <li>Clustering (SOM, K-Medoids)</li>
+            <li>Autoencoders</li>
+            <li>Generative Adversarial Networks (GANs)</li>
+          </ul>
+
+          <h3>Generative AI & NLP</h3>
+          <ul class="clean">
+            <li>Large Language Models (LLMs)</li>
+            <li>Retrieval-Augmented Generation (RAG)</li>
+            <li>Text Embeddings</li>
+            <li>Prompt Engineering</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Data Analysis & Visualization</h3>
+          <ul class="clean">
+            <li>Exploratory Data Analysis</li>
+            <li>Statistical Modeling</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Plotly</li>
+            <li>ggplot2</li>
+            <li>Bokeh</li>
+            <li>Power BI</li>
+          </ul>
+
+          <h3>Tools & Environment</h3>
+          <ul class="clean">
+            <li>Git</li>
+            <li>VS Code</li>
+            <li>Jupyter Notebook</li>
+            <li>LaTeX</li>
+          </ul>
+
+          <h3>Cloud & Data Platforms</h3>
+          <ul class="clean">
+            <li>Cloud fundamentals: IaaS, PaaS, SaaS</li>
+            <li>Basic knowledge of AWS, Azure and GCP</li>
+          </ul>
+
+          <h3>Languages</h3>
+          <ul class="clean">
+            <li>French — C2</li>
+            <li>English — B2</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Projects</h2>
+          <p>Selected projects that reflect my technical interests and applied experience.</p>
+        </div>
+        <button class="close-btn" data-close="projects">Close</button>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Customer Segmentation with SOM + K-Medoids</h3>
+          <p>Built a hybrid unsupervised segmentation workflow combining Self-Organizing Maps and K-Medoids to structure high-dimensional data and identify meaningful customer groups.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Scikit-learn</span>
+          </div>
+          <p><strong>GitHub:</strong> Add your repository link here</p>
+        </article>
+        <article class="card">
+          <h3>Energy Demand Forecasting</h3>
+          <p>Designed a forecasting approach to analyze and predict winter energy demand using national-scale consumption data, seasonal analysis, and statistical modeling.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Forecasting</span>
+          </div>
+          <p><strong>GitHub:</strong> Add your repository link here</p>
+        </article>
+        <article class="card">
+          <h3>Anomaly Detection with Autoencoder</h3>
+          <p>Built a preprocessing pipeline for sequential data and implemented an Autoencoder-based model to detect abnormal patterns in time-dependent observations.</p>
+          <div class="tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">Anomaly Detection</span>
+            <span class="tag">Deep Learning</span>
+          </div>
+          <p><strong>GitHub:</strong> Add your repository link here</p>
+        </article>
+        <article class="card">
+          <h3>Deep Learning on MNIST: GANs & Autoencoders</h3>
+          <p>Implemented generative and representation learning models on MNIST, including a GAN architecture, Autoencoders, and deep unsupervised methods.</p>
+          <div class="tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">GANs</span>
+            <span class="tag">Autoencoders</span>
+          </div>
+          <p><strong>GitHub:</strong> Add your repository link here</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Experience</h2>
+          <p>Internships where I applied data science to real-world problems.</p>
+        </div>
+        <button class="close-btn" data-close="experience">Close</button>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Data Scientist Intern — Crédit Populaire d’Algérie</h3>
+          <div class="timeline-meta">Algiers, Algeria • Feb 2025 – Jun 2025</div>
+          <ul class="clean">
+            <li>Developed a hybrid hierarchical unsupervised segmentation model using SOM and K-Medoids.</li>
+            <li>Structured high-dimensional data with an unsupervised neural network approach.</li>
+            <li>Performed preprocessing, normalization, and statistical interpretation of clusters.</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h3>Data Scientist Intern — Sonelgaz</h3>
+          <div class="timeline-meta">Algiers, Algeria • Jun 2024 – Sep 2024</div>
+          <ul class="clean">
+            <li>Conducted exploratory and statistical analysis of national-scale energy consumption.</li>
+            <li>Designed a winter energy demand forecasting model.</li>
+            <li>Contributed to anomaly detection on electricity consumption patterns.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Education</h2>
+          <p>Academic background in data science, statistics, and mathematics.</p>
+        </div>
+        <button class="close-btn" data-close="education">Close</button>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Master’s in Mathematics for Data Science</h3>
+          <p>Sorbonne Paris-Nord University<br>Villetaneuse, France<br><span class="muted">Since Sep 2025</span></p>
+        </div>
+        <div class="card">
+          <h3>Master’s in Applied Statistics and Probability</h3>
+          <p>USTHB<br>Algiers, Algeria<br><span class="muted">Sep 2023 – Jul 2025</span></p>
+        </div>
+        <div class="card">
+          <h3>Bachelor’s in Mathematics and Computer Science</h3>
+          <p>USTHB<br>Algiers, Algeria<br><span class="muted">Sep 2018 – Jun 2023</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Contact</h2>
+          <p>I’m open to internship opportunities, collaborations, and data science discussions.</p>
+        </div>
+        <button class="close-btn" data-close="contact">Close</button>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <strong>Email</strong>
+          <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=yzyazid8@gmail.com" target="_blank" rel="noopener noreferrer">Contact me via Gmail</a></p>
+        </div>
+        <div class="contact-item">
+          <strong>LinkedIn</strong>
+          <p>Add your LinkedIn link here</p>
+        </div>
+        <div class="contact-item">
+          <strong>GitHub</strong>
+          <p>Add your GitHub link here</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built for GitHub Pages • © Yazid Farez
+    </footer>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.menu-btn');
+    const panels = document.querySelectorAll('.panel');
+    const closeButtons = document.querySelectorAll('.close-btn');
+
+    function openPanel(id) {
+      panels.forEach(panel => panel.classList.toggle('active', panel.id === id));
+      buttons.forEach(button => button.classList.toggle('active', button.dataset.target === id));
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => openPanel(button.dataset.target));
+    });
+
+    closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        document.getElementById(button.dataset.close).classList.remove('active');
+        buttons.forEach(btn => btn.classList.remove('active'));
+      });
+    });
+  </script>
+</body>
+</html>
