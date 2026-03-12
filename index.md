@@ -1,145 +1,199 @@
-# 👋 Yazid Farez  
+# Yazid Farez
+
 ### Data Scientist | Machine Learning & Statistical Modeling
 
-🚀 *Turning data into insights and intelligent systems.*
+*Building data-driven solutions with statistical modeling, machine learning, and deep learning.*
 
-Hi there! I'm **Yazid Farez**, a junior **Data Scientist** currently pursuing a **Master’s degree in Data Mathematics at Sorbonne Paris-Nord University**.  
-I am actively looking for a **4–6 month end-of-studies internship starting in March**, where I can apply advanced analytics, machine learning, and deep learning techniques to solve real-world problems.
-
----
-
-# 🧑‍💻 About Me
-
-I’m a data science enthusiast with a strong academic background in **mathematics, statistics, and machine learning**. My journey into data began through applied mathematics, where I discovered the power of combining **statistical modeling with modern machine learning techniques** to uncover patterns and make predictions.
-
-During my academic and professional experiences, I’ve worked on projects involving **energy demand forecasting, anomaly detection, and unsupervised clustering of complex datasets**. I enjoy building models that transform raw data into meaningful insights, whether through **deep learning architectures, statistical analysis, or exploratory data analysis**.
-
-Curious by nature, I constantly seek to deepen my understanding of **data science, artificial intelligence, and scalable data systems**. My goal is to contribute to impactful projects where data-driven solutions can improve decision-making and innovation.
+[About](#about-me) | [Projects](#featured-projects) | [Experience](#professional-experience) | [Contact](#lets-connect)
 
 ---
 
-# 🧠 Core Skills
+## 👋 Welcome
 
-### 💻 Programming
-- **Python:** Pandas, NumPy, Scikit-learn, PyTorch  
-- **R:** dplyr, caret  
+Hi, I'm **Yazid Farez**, a junior **Data Scientist** currently pursuing a **Master’s degree in Data Mathematics at Sorbonne Paris-Nord University**.
 
-### 🤖 Machine Learning & Deep Learning
-- Supervised and Unsupervised Learning  
-- Neural Networks  
-- Autoencoders  
-- Generative Adversarial Networks (GANs)  
+I am looking for a **4–6 month end-of-studies internship starting in March**, where I can contribute to real-world data projects involving analytics, machine learning, and intelligent systems.
+
+---
+
+## 👨‍💻 About Me
+
+I am passionate about using data to understand complex problems and build meaningful solutions. My academic background in **applied mathematics, statistics, and computer science** has given me a strong foundation for tackling data-driven challenges with both rigor and creativity.
+
+Over the course of my studies and internships, I have worked on projects involving **customer segmentation, energy demand forecasting, anomaly detection, and deep learning**. What I enjoy most is moving from raw data to useful insight: exploring patterns, designing models, interpreting results, and turning them into actionable outcomes.
+
+I am particularly interested in **statistical modeling, machine learning, deep learning, and data science applications with real operational impact**. I enjoy learning continuously and I am always motivated by projects where data can support smarter decisions.
+
+---
+
+## 🧠 Technical Skills
+
+### Programming
+- **Python**: Pandas, NumPy, Scikit-learn, PyTorch, Matplotlib
+- **R**: dplyr, caret
+
+### Machine Learning & Deep Learning
+- Supervised Learning
+- Unsupervised Learning
+- Clustering
 - Self-Organizing Maps (SOM)
+- K-Medoids
+- Autoencoders
+- Generative Adversarial Networks (GANs)
 
-### 🗄️ Databases
-- SQL  
-- T-SQL  
-- Azure SQL  
-
-### ☁️ Cloud & Data Platforms
-- Cloud fundamentals: **IaaS, PaaS, SaaS**
-- Basic knowledge of:
-  - AWS
-  - Microsoft Azure
-  - Google Cloud Platform
-- Data storage, computing, and analytics services
-
-### 📊 Data Visualization & BI
-**Libraries**
-- Matplotlib  
-- Seaborn  
-- Plotly  
-- ggplot2  
-- Bokeh  
-
-**Tools**
+### Data Analysis & Visualization
+- Exploratory Data Analysis
+- Statistical Modeling
+- Matplotlib
+- Seaborn
+- Plotly
+- ggplot2
+- Bokeh
 - Power BI
 
-### 🛠 Tools & Environment
-- Git  
-- VS Code  
-- Jupyter Notebook  
-- LaTeX  
+### Databases & Cloud
+- SQL
+- T-SQL
+- Azure SQL
+- Cloud fundamentals: IaaS, PaaS, SaaS
+- Basic knowledge of AWS, Azure, and GCP
 
-### 🌍 Languages
-- 🇫🇷 French — C2 (Fluent)  
-- 🇬🇧 English — B2 (Professional)
+### Tools
+- Git
+- VS Code
+- Jupyter Notebook
+- LaTeX
 
----
-
-# 💼 Professional Experience
-
-### Data Scientist — Crédit Populaire d’Algérie  
-*Algiers, Algeria | Feb 2025 – Jun 2025*
-
-- Developed a **hybrid hierarchical unsupervised segmentation model** based on **Self-Organizing Maps (SOM)**.
-- Trained an **unsupervised neural network** to structure high-dimensional customer data.
-- Applied **K-Medoids clustering** to identify meaningful customer segments.
-- Performed **data preprocessing, normalization, and statistical interpretation** of clusters.
-- Contributed to improving **customer segmentation strategies** using advanced machine learning techniques.
+### Languages
+- **French**: C2
+- **English**: B2
 
 ---
 
-### Data Scientist — Sonelgaz  
-*Algiers, Algeria | Jun 2024 – Sep 2024*
+## 🚀 Featured Projects
 
-- Conducted **exploratory data analysis and statistical characterization** of national energy consumption.
-- Designed and implemented a **winter energy demand forecasting model**.
-- Built **anomaly detection methods** to identify irregular consumption patterns.
-- Delivered insights to better understand **energy demand behavior and seasonality**.
+### 1. Customer Segmentation with SOM + K-Medoids
+**Tech Stack:** Python, NumPy, Scikit-learn
 
----
+Developed a hybrid unsupervised segmentation approach based on **Self-Organizing Maps (SOM)** followed by **K-Medoids clustering**. This project focused on structuring high-dimensional data, identifying meaningful clusters, and interpreting them statistically.
 
-# 🚀 Featured Projects
+**Highlights:**
+- Data preprocessing and normalization
+- Unsupervised neural network training
+- Cluster interpretation and analysis
 
-### 🔎 Sequential Data Anomaly Detection
-**Tech Stack:** Python, PyTorch, NumPy, Matplotlib  
-
-- Developed a **data preprocessing pipeline for sequential datasets**.  
-- Implemented an **Autoencoder-based anomaly detection model**.  
-- Detected abnormal patterns in sequential data using **deep learning techniques**.
+**GitHub:** *Add your repository link here*
 
 ---
 
-### 🧠 Deep Learning Models (GANs & DeepSOM)
-**Tech Stack:** Python, PyTorch, NumPy, Matplotlib  
+### 2. Energy Demand Forecasting
+**Tech Stack:** Python, Pandas, Scikit-learn, Matplotlib
 
-- Implemented a **Generative Adversarial Network (GAN)** architecture for image generation on the **MNIST dataset**.
-- Built **Autoencoder and DeepSOM models** for:
-  - Dimensionality reduction
-  - Data denoising
-  - Unsupervised deep clustering
+Built a forecasting approach to analyze and predict **winter energy demand** using national-scale consumption data. The work included exploratory analysis, statistical characterization, and modeling of seasonal demand behavior.
 
----
+**Highlights:**
+- Exploratory data analysis
+- Seasonal consumption analysis
+- Demand forecasting
 
-# 🎓 Education & Certifications
-
-### Master — Mathematics for Data Science  
-**Sorbonne Paris-Nord University**  
-*Villetaneuse, France | 2025 – Present*
+**GitHub:** *Add your repository link here*
 
 ---
 
-### Master — Applied Statistics and Probability  
-**USTHB – University of Science and Technology Houari Boumediene**  
-*Algiers, Algeria | 2023 – 2025*
+### 3. Anomaly Detection with Autoencoder
+**Tech Stack:** Python, PyTorch, NumPy, Matplotlib
+
+Created a Python pipeline for preparing sequential data and implemented an **Autoencoder-based anomaly detection model** to identify abnormal patterns in time-dependent observations.
+
+**Highlights:**
+- Sequential data preprocessing
+- Deep learning-based anomaly detection
+- Model evaluation and visualization
+
+**GitHub:** *Add your repository link here*
 
 ---
 
-### Bachelor — Mathematics & Computer Science  
-**USTHB – University of Science and Technology Houari Boumediene**  
-*Algiers, Algeria | 2018 – 2023*
+### 4. Deep Learning on MNIST: GANs & Autoencoders
+**Tech Stack:** Python, PyTorch, NumPy, Matplotlib
+
+Implemented and completed a **GAN architecture** for image generation on the MNIST dataset, and explored **Autoencoder / DeepSOM-based approaches** for dimensionality reduction, denoising, and unsupervised deep clustering.
+
+**Highlights:**
+- Generator / Discriminator implementation
+- Representation learning
+- Deep unsupervised modeling
+
+**GitHub:** *Add your repository link here*
 
 ---
 
-# 📬 Let's Connect
+## 💼 Professional Experience
 
-I’m always open to discussing **data science, machine learning, and collaborative opportunities**.
+### Data Scientist Intern — Crédit Populaire d’Algérie  
+**Algiers, Algeria** | **Feb 2025 – Jun 2025**
 
-📧 **Email:** yzyazid8@gmail.com  
-💼 **LinkedIn:** https://linkedin.com/in/YazidFAREZ  
-💻 **GitHub:** https://github.com/YazidFAREZ  
+Worked on a **hybrid hierarchical unsupervised segmentation model** using **Self-Organizing Maps (SOM)** and **K-Medoids**.
+
+**Main contributions:**
+- Developed an unsupervised segmentation workflow
+- Structured high-dimensional data using SOM
+- Applied clustering methods to identify meaningful groups
+- Performed preprocessing, normalization, and cluster interpretation
 
 ---
 
-⭐ *If you like my work, feel free to explore my projects or connect with me!*
+### Data Scientist Intern — Sonelgaz  
+**Algiers, Algeria** | **Jun 2024 – Sep 2024**
+
+Worked on the analysis and modeling of **energy consumption at a national scale**.
+
+**Main contributions:**
+- Conducted exploratory and statistical analysis of energy consumption
+- Designed a winter energy demand forecasting model
+- Contributed to anomaly detection on consumption patterns
+
+---
+
+## 🎓 Education
+
+### Master’s Degree in Mathematics for Data Science  
+**Sorbonne Paris-Nord University** — Villetaneuse, France  
+**Since Sep 2025**
+
+### Master’s Degree in Applied Statistics and Probability  
+**USTHB** — Algiers, Algeria  
+**Sep 2023 – Jul 2025**
+
+### Bachelor’s Degree in Mathematics and Computer Science  
+**USTHB** — Algiers, Algeria  
+**Sep 2018 – Jun 2023**
+
+---
+
+## 📌 Current Focus
+
+I am currently deepening my knowledge in:
+- Machine Learning for real-world applications
+- Deep Learning and neural architectures
+- NLP, LLMs, and Retrieval-Augmented Generation (RAG)
+- Applied statistical modeling
+
+---
+
+## 📬 Let's Connect
+
+I am open to internship opportunities, collaborations, and data science discussions.
+
+- **Email:** yzyazid8@gmail.com
+- **LinkedIn:** *Add your LinkedIn link here*
+- **GitHub:** *Add your GitHub link here*
+- **Location:** Île-de-France, France
+
+---
+
+## 📄 Resume
+
+You can also add a PDF version of my resume here once uploaded to the repository:
+
+**Download CV:** *Add your CV PDF link here*
